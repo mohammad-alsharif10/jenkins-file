@@ -10,12 +10,12 @@ pipeline {
 //        }
         stage('build') {
             steps {
-                sh './mvnw clean install'
+                bat './mvnw clean install'
             }
         }
         stage('deploy') {
             steps {
-                sh '''
+                bat '''
                     cd ./target
                     java -jar ./jenkins-file-0.0.1-SNAPSHOT.jar
                 '''
