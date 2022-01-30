@@ -10,7 +10,7 @@ pipeline {
 //        }
         stage('build') {
             steps {
-                bat './mvnw clean install'
+                sh './mvnw clean install'
             }
         }
         stage('deploy') {
