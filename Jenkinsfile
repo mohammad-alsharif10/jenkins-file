@@ -10,7 +10,7 @@ pipeline {
 //        }
         stage('build') {
             steps {
-                sh 'chmod +x ./mvnw clean install'
+                sh './mvnw clean install'
             }
         }
         stage('deploy') {
