@@ -4,8 +4,8 @@ pipeline {
     stages {
         stage('check-out') {
             steps {
-                git branch: 'stable-2.204',
-                        url: 'https://github.com/jenkinsci/jenkins.git'
+                git branch: 'master',
+                        url: 'https://github.com/mohammad-alsharif10/jenkins-file.git'
             }
         }
         stage('build') {
