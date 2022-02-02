@@ -15,10 +15,7 @@ pipeline {
         }
         stage('deploy') {
             steps {
-                bat '''
-                    cd ./target
-                    java -jar ./jenkins-file-0.0.1-SNAPSHOT.jar
-                '''
+                bat 'java -jar target/jenkins-file-0.0.1-SNAPSHOT.jar  &'
             }
         }
     }
